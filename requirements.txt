@@ -5,6 +5,7 @@ Flask-RESTful==0.2.12
 Flask-Restless==0.15.0
 Flask-SQLAlchemy==2.0
 flask-heroku==0.1.9
+apns==2.0.1
 psycopg2==2.5.4
 gunicorn==19.1.1
 Jinja2==2.7.3
