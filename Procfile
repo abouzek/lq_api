@@ -1,0 +1,1 @@
+web: gunicorn love_quest.app:app --pythonpath ./love_quest --log-file=-
