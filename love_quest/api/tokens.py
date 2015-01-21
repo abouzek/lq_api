@@ -1,6 +1,6 @@
 from flask import g, jsonify
 from models import Link, User
-from api import api
+from . import api
 from extensions import auth
 
 def get_linked_user_id_for_user(id):

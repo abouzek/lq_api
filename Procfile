@@ -1,1 +1,1 @@
-web: gunicorn love_quest.app:app --pythonpath ./love_quest --log-file=-
+web: gunicorn --pythonpath love_quest love_quest.app:app --log-file=-

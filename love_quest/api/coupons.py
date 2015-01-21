@@ -2,7 +2,7 @@ from flask import jsonify
 from models import Coupon, User
 from schemas import CouponSchema
 from extensions import auth, send_push
-from api import api
+from . import api
 
 coupon_schema = CouponSchema()
 

@@ -3,7 +3,7 @@ from json import dumps
 from models import User, Link, Coupon
 from schemas import UserSchema, CouponSchema, LinkSchema
 from extensions import auth, returns_json
-from api import api
+from . import api
 
 user_schema = UserSchema()
 coupons_schema = CouponSchema(many=True)

@@ -2,7 +2,7 @@ from flask import jsonify
 from extensions import auth, send_push
 from schemas import LinkSchema
 from models import Link, User
-from api import api
+from . import api
 
 link_schema = LinkSchema()
 
