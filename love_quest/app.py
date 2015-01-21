@@ -9,7 +9,7 @@ from sys import stdout
 
 app = Flask(__name__)
 app.config.update(
-	SQLALCHEMY_DATABASE_URI='sqlite:////tmp/test.db',
+	# SQLALCHEMY_DATABASE_URI='sqlite:////tmp/test.db',
 	SECRET_KEY='the quick brown fox jumps over the lazy dog',
 	SQLALCHEMY_COMMIT_ON_TEARDOWN=True
 )
