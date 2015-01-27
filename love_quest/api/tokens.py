@@ -1,7 +1,7 @@
-from flask import g, jsonify
+from flask import g, jsonify, request
 from models import Link, User
 from . import api
-from extensions import auth
+from extensions import auth, db
 
 def get_linked_user_id_for_user(id):
 	link = Link.query.filter_by(first_user_id=id).first()

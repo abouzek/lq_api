@@ -1,7 +1,7 @@
-from flask import jsonify
+from flask import jsonify, request
 from models import PushRegistration
 from schemas import PushRegistrationSchema
-from extensions import auth
+from extensions import auth, db
 from . import api
 
 push_schema = PushRegistrationSchema()

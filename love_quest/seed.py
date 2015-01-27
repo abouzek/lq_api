@@ -30,9 +30,9 @@ def seed():
 	coupon3 = Coupon('Back scratch', 3, test2.id, test.id)
 	coupon4 = Coupon('Cook dinner', 5, test2.id, test.id)
 
-	link = Link(test.id, test2.id)
+	# link = Link(test.id, test2.id)
 
-	db.session.add_all((coupon1, coupon2, coupon3, coupon4, link))
+	db.session.add_all((coupon1, coupon2, coupon3, coupon4))
 	db.session.commit()
 
 if __name__ == '__main__':

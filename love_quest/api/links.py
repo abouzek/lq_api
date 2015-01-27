@@ -1,5 +1,5 @@
-from flask import jsonify
-from extensions import auth, send_push
+from flask import jsonify, request
+from extensions import auth, send_push, db
 from schemas import LinkSchema
 from models import Link, User
 from . import api
