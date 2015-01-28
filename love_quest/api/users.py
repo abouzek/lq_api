@@ -7,6 +7,7 @@ from . import api
 
 user_schema = UserSchema()
 coupons_schema = CouponSchema(many=True)
+link_schema = LinkSchema()
 
 @api.route('/users', methods=['POST'])
 def create_user():
